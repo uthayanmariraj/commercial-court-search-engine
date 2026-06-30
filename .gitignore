@@ -1,41 +1,69 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# -----------------------------
+# Python
+# -----------------------------
+backend/venv/
+backend/__pycache__/
+backend/**/*.pyc
+backend/.pytest_cache/
+backend/.mypy_cache/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
+# -----------------------------
+# Environment Variables
+# -----------------------------
+.env
+.env.*
+!.env.example
 
-# testing
-/coverage
+# -----------------------------
+# Next.js
+# -----------------------------
+frontend/.next/
+frontend/node_modules/
+frontend/out/
 
-# next.js
-/.next/
-/out/
+# -----------------------------
+# VS Code
+# -----------------------------
+.vscode/
 
-# production
-/build
+# -----------------------------
+# Logs
+# -----------------------------
+*.log
 
-# misc
+# -----------------------------
+# OS Files
+# -----------------------------
 .DS_Store
-*.pem
+Thumbs.db
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
+# -----------------------------
+# AI / ML
+# -----------------------------
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
 
-# env files (can opt-in for committing if needed)
-.env*
+# -----------------------------
+# FAISS Indexes
+# -----------------------------
+*.faiss
 
-# vercel
-.vercel
+# -----------------------------
+# Python cache
+# -----------------------------
+*.pkl
+*.pickle
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# -----------------------------
+# Jupyter
+# -----------------------------
+.ipynb_checkpoints/
+
+# -----------------------------
+# Temporary files
+# -----------------------------
+tmp/
+temp/
